@@ -18,17 +18,17 @@ $ cd singularity_stable_diffusion_webui
 ### base imageのbuild
 ubuntu 20.04にpython3.10, cuda11.3をインストールしたイメージを作成します。
 ```
-$ sudo bash create_base_image.sh
+$ sudo bash build_base_image.sh
 ```
 ### repositories imageのbuild
 base imageにstable-diffusion-webuiで使用するリポジトリ等をインストールしたイメージを作成します。
 ```
-$ sudo bash create_repositories_image.sh
+$ sudo bash build_repositories_image.sh
 ```
 ### sdwebui imageのbuild
 stable-diffusion-webui(AUTOMATIC1111版) をインストールしたイメージを作成します。
 ```
-$ sudo bash create_sdwebui_image.sh
+$ sudo bash build_sdwebui_image.sh
 ```
 更新頻度の高いstable-diffusion-webuiのインストールを分離していますので、更新があった場合は通常sdwebui imageのbuildのみ再実行します。
 stable-diffusion-webuiが内部で使用しているリポジトリの追加等があった場合はSingularity.repositoriesを修正してrepositories.sifのbuildが必要になります。
