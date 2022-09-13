@@ -15,7 +15,7 @@ ubuntu 20.04にpython3.10, cuda11.3をインストールしたイメージを作
 ```
 $ sudo bash create_base_image.sh
 ```
-### repository imageのbuild
+### repositories imageのbuild
 base imageにstable-diffusion-webuiで使用するリポジトリ等をインストールしたイメージを作成します。
 ```
 $sudo bash create_repositories_image.sh
