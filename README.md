@@ -6,7 +6,10 @@
 Linuxで使用する場合はNVIDIA driver, singularity3.9のインストールを行ってください。
 
 https://sylabs.io/2022/03/wsl2-gpu/
+
+また、コマンドラインの実行用にMicrosoft StoreからWindows Termnalをインストールしておくことをお勧めします。以下のコマンドはWSL2のインストール時に同時にインストールされたUbuntu on WindowsやWindows Terminalで実行します。
 ## 本リポジトリのclone
+cloneする場所はどこでも構いません。
 ```
 $ git clone https://github.com/oct1971/singularity_stable_diffusion_webui
 $ cd singularity_stable_diffusion_webui
