@@ -31,7 +31,7 @@ $ sudo bash create_sdwebui_image.sh
 stable-diffusion-webuiが内部で使用しているリポジトリの追加等があった場合はSingularity.repositoriesを修正してrepositories.sifのbuildが必要になります。
 
 ## 初期設定の実行
-singularityで実行されるコンテナ内は一部を除いて書き込み禁止であるため、stable-diffusion-webuiの実行後にダウンロードされるファイルの保存場所やファイルサイズの大きいmodelファイルはコンテナ実行時にコンテナ内にディレクトリ・ファイルをバインドするようになっています。それらのディレクトリ・ファイルの準備を行います。
+singularityで実行されるコンテナ内は一部を除いて書き込み禁止であるため、stable-diffusion-webuiの実行後にダウンロードされるファイルの保存場所はコンテナ実行時にコンテナ内にディレクトリをバインドします。また、ファイルサイズの大きいmodelファイルもイメージ内に入れないようにしています。それらのディレクトリ・ファイルの準備を行います。
 ```
 $ bash init.sh
 ```
