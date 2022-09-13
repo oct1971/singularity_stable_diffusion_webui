@@ -57,6 +57,7 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 - Output directory for images from extras tab: /outputs/extras-images
 - Output directory for txt2img grids: /outputs/txt2img-grids
 - Output directory for img2img grids: /outputs/img2img-grids
+- Directory for saving images using the Save button: /log/images
 - Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
 ### stable-diffusion-webuiの停止
 以下のコマンドで停止させてください。
