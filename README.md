@@ -23,7 +23,7 @@ $ sudo bash create_base_image.sh
 ### repositories imageのbuild
 base imageにstable-diffusion-webuiで使用するリポジトリ等をインストールしたイメージを作成します。
 ```
-$sudo bash create_repositories_image.sh
+$ sudo bash create_repositories_image.sh
 ```
 ### sdwebui imageのbuild
 stable-diffusion-webui(AUTOMATIC1111版) をインストールしたイメージを作成します。
