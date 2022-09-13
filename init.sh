@@ -8,7 +8,7 @@ cd data_dir
 mkdir ESRGAN
 mkdir models
 mkdir realesrgan-weight
-mkdir weight-codeformer
-mkdir weight-facelib
-singularity exec sdwebui.sif cp /opt/stable-diffusion-webui/config.json ./
-singularity exec sdwebui.sif cp /opt/stable-diffusion-webui/ui-config.json ./
+mkdir weights-codeformer
+mkdir weights-facelib
+echo '{}' > config.json
+echo '{}' > ui-config.json

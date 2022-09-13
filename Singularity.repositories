@@ -22,4 +22,5 @@ From: ubuntu-20.04-python-3.10-cuda-11.3.sif
     pip install git+https://github.com/crowsonkb/k-diffusion.git --prefer-binary
     pip install git+https://github.com/TencentARC/GFPGAN.git --prefer-binary
     pip install -U numpy --prefer-binary
+    pip install torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
