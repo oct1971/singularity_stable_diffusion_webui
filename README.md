@@ -1,5 +1,5 @@
 # singularity_stable_diffusion_webui
-stable-diffusion-webui(AUTOMATIC1111版) をインストールしたsingularity imageを作成・実行するためのシェルスクリプトです。
+[stable-diffusion-webui(AUTOMATIC1111版)](https://github.com/AUTOMATIC1111/stable-diffusion-webui) をインストールしたsingularity imageを作成・実行するためのシェルスクリプトです。
 ## WSL2, ubuntu20.04, singularity 3.9のインストール
 以下のページの手順に従ってWindows10/11にWSL2, ubuntu20.04, NVIDIA driver, libnvidia-container-tools, singularity3.9をインストールします。
 
