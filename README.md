@@ -67,5 +67,5 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 ### stable-diffusion-webuiの停止
 以下のコマンドで停止させてください。
 ```
-$ singularity instance stop sd-webui
+$ singularity instance stop sdwebui
 ```
