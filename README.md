@@ -58,3 +58,8 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 - Output directory for txt2img grids: /outputs/txt2img-grids
 - Output directory for img2img grids: /outputs/img2img-grids
 - Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+### stable-diffusion-webuiの停止
+以下のコマンドで停止させてください。
+```
+$ singularity instance stop sd-webui
+```
