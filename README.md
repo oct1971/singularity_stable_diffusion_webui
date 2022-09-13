@@ -3,6 +3,8 @@
 ## WSL2, ubuntu20.04, singularity 3.9のインストール
 以下のページの手順に従ってWindows10/11にWSL2, ubuntu20.04, NVIDIA driver, libnvidia-container-tools, singularity3.9をインストールします。
 
+Linuxで使用する場合はNVIDIA driver, singularity3.9のインストールを行ってください。
+
 https://sylabs.io/2022/03/wsl2-gpu/
 ## 本リポジトリのclone
 ```
@@ -34,11 +36,25 @@ singularityで実行されるコンテナ内は一部を除いて書き込み禁
 $ bash init.sh
 ```
 ## modelの配置
-modelファイルは別途用意し、data_dir/models/ に配置してください。
+modelファイルは別途用意し、data_dir/models/ にリネームせずに配置してください。
+[本家model](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original): sd-v1-4.ckpt
+[waifu-diffuion model](https://huggingface.co/hakurei/waifu-diffusion): wd-v1-2-full-ema.ckpt
 ## stable-diffusion-webuiの起動
 ### 本家modelでの起動
-使用するmodelごとに画像の出力先を切り替えるようになっています。
+本家modelで起動した場合、生成された画像はoutputs_sdディレクトリに、セーブした画像はlog_sdディレクトリに保存されます。
 ```
 $ bash start_instance_sd.sh
 ```
+### waifu-diffusion modelでの起動
+waifu-diffusion modelで起動した場合、生成された画像はoutputs_waifuディレクトリに、セーブした画像はlog_waifuディレクトリに保存されます。
+```
+$ bash start_instance_waifu.sh
+```
 ### stable-diffusion-webuiの初期設定
+Settingsタブで以下の設定を行い、Apply settingsをクリックして設定を保存してください。
+- Output directory for txt2img images: /outputs/txt2img-images
+- Output directory for img2img images: /outputs/img2img-images
+- Output directory for images from extras tab: /outputs/extras-images
+- Output directory for txt2img grids: /outputs/txt2img-grids
+- Output directory for img2img grids: /outputs/img2img-grids
+- Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
