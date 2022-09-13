@@ -1,5 +1,5 @@
 # singularity_stable_diffusion_webui
-[stable-diffusion-webui(AUTOMATIC1111版)](https://github.com/AUTOMATIC1111/stable-diffusion-webui) をインストールしたsingularity imageを作成・実行するためのシェルスクリプトです。
+[stable-diffusion-webui(AUTOMATIC1111版)](https://github.com/AUTOMATIC1111/stable-diffusion-webui) をインストールしたsingularity imageを作成・実行するためのsingularity定義ファイルとシェルスクリプトです。
 ## WSL2, ubuntu20.04, singularity 3.9のインストール
 以下のページの手順に従ってWindows10/11にWSL2, ubuntu20.04, NVIDIA driver, libnvidia-container-tools, singularity3.9をインストールします。
 
@@ -23,7 +23,7 @@ $ sudo bash create_base_image.sh
 ### repositories imageのbuild
 base imageにstable-diffusion-webuiで使用するリポジトリ等をインストールしたイメージを作成します。
 ```
-$sudo bash create_repositories_image.sh
+$ sudo bash create_repositories_image.sh
 ```
 ### sdwebui imageのbuild
 stable-diffusion-webui(AUTOMATIC1111版) をインストールしたイメージを作成します。
@@ -42,6 +42,8 @@ $ bash init.sh
 modelファイルは別途用意し、data_dir/models/ にリネームせずに配置してください。
 - [本家model](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original): sd-v1-4.ckpt
 - [waifu-diffuion model](https://huggingface.co/hakurei/waifu-diffusion): wd-v1-2-full-ema.ckpt
+## ESRGANのmodelの配置
+ESRGANのmodelは data_dir/ESRGAN/ に配置してください。
 ## stable-diffusion-webuiの起動
 ### 本家modelでの起動
 本家modelで起動した場合、生成された画像はoutputs_sdディレクトリに、セーブした画像はlog_sdディレクトリに保存されます。
@@ -65,5 +67,5 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 ### stable-diffusion-webuiの停止
 以下のコマンドで停止させてください。
 ```
-$ singularity instance stop sd-webui
+$ singularity instance stop sdwebui
 ```
