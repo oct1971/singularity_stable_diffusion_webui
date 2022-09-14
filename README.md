@@ -15,6 +15,7 @@ $ git clone https://github.com/oct1971/singularity_stable_diffusion_webui
 $ cd singularity_stable_diffusion_webui
 ```
 ## singularity imageのbuild
+singularity imageのbuildは管理者権限が必要なため、sudoを付けて実行してください。
 ### base imageのbuild
 ubuntu 20.04にpython3.10, cuda11.3をインストールしたイメージを作成します。
 ```
