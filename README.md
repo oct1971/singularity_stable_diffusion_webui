@@ -7,7 +7,7 @@ Linuxで使用する場合はNVIDIA driver, singularity3.9のインストール�
 
 https://sylabs.io/2022/03/wsl2-gpu/
 
-また、コマンドラインの実行用にMicrosoft StoreからWindows Termnalをインストールしておくことをお勧めします。以下のコマンドはWSL2のインストール時に同時にインストールされたUbuntu on WindowsやWindows Terminalで実行します。
+また、コマンドラインの実行用にMicrosoft StoreからWindows Termnalをインストールしておくことをお勧めします。以下のコマンドはWSL2のインストール時に同時にインストールされたUbuntu on WindowsやWindows Terminalで開いたubuntuのシェルで実行します。
 ## 本リポジトリのclone
 cloneする場所はどこでも構いません。
 ```
