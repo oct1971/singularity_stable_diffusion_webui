@@ -71,3 +71,5 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 ```
 $ singularity instance stop sdwebui
 ```
+## Windowsのエクスプローラから作成した画像へのアクセス
+エクスプローラのアドレスバーに `\\wsl\Ubuntu-20.04\home\<あなたのアカウント名>\<本リポジトリをcloneした場所>`を入力して開いてください。
