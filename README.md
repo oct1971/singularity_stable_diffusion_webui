@@ -57,7 +57,7 @@ waifu-diffusion modelで起動した場合、生成された画像はoutputs_wai
 ```
 $ bash start_instance_waifu.sh
 ```
-### stable-diffusion-webuiの初期設定
+## stable-diffusion-webuiの初期設定
 Settingsタブで以下の設定を行い、Apply settingsをクリックして設定を保存してください。
 - Output directory for txt2img images: /outputs/txt2img-images
 - Output directory for img2img images: /outputs/img2img-images
@@ -66,7 +66,7 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 - Output directory for img2img grids: /outputs/img2img-grids
 - Directory for saving images using the Save button: /log/images
 - Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
-### stable-diffusion-webuiの停止
+## stable-diffusion-webuiの停止
 以下のコマンドで停止させてください。
 ```
 $ singularity instance stop sdwebui
