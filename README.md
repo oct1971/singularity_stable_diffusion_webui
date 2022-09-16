@@ -32,7 +32,7 @@ stable-diffusion-webui(AUTOMATIC1111版) をインストールしたイメージ
 $ sudo bash build_sdwebui_image.sh
 ```
 更新頻度の高いstable-diffusion-webuiのインストールを分離していますので、更新があった場合は通常sdwebui imageのbuildのみ再実行します。
-stable-diffusion-webuiが内部で使用しているリポジトリの追加等があった場合はSingularity.repositoriesを修正してrepositories.sifのbuildが必要になります。
+stable-diffusion-webuiが内部で使用しているリポジトリの追加等があった場合は[Manual Installation](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs#manual-installation)の内容を参考にSingularity.repositoriesを修正し、repositories.sifを再buildする必要があります。
 
 ## 初期設定の実行
 singularityで実行されるコンテナ内は一部を除いて書き込み禁止であるため、stable-diffusion-webuiの実行後にダウンロードされるファイルの保存場所はコンテナ実行時にコンテナ内にディレクトリをバインドします。また、ファイルサイズの大きいmodelファイルもイメージ内に入れないようにしています。それらのディレクトリ・ファイルの準備を行います。
