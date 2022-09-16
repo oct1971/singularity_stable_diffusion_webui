@@ -47,13 +47,13 @@ modelファイルは別途用意し、data_dir/models/ にリネームせずに�
 ## ESRGANのmodelの配置（オプション）
 ESRGANのmodelは data_dir/ESRGAN/ に配置してください。
 ## stable-diffusion-webuiの起動
-### 本家modelでの起動
-本家modelで起動した場合、生成された画像はoutputs_sdディレクトリに、セーブした画像はlog_sdディレクトリに保存されます。
+### 本家model (sd-v1-4.ckpt) での起動
+本家model (sd-v1-4.ckpt) で起動した場合、生成された画像はoutputs_sdディレクトリに、セーブした画像はlog_sdディレクトリに保存されます。
 ```
 $ bash start_instance_sd.sh
 ```
-### waifu-diffusion modelでの起動
-waifu-diffusion modelで起動した場合、生成された画像はoutputs_waifuディレクトリに、セーブした画像はlog_waifuディレクトリに保存されます。
+### waifu-diffusion model (wd-v1-2-full-ema.ckpt) での起動
+waifu-diffusion model (wd-v1-2-full-ema.ckpt) で起動した場合、生成された画像はoutputs_waifuディレクトリに、セーブした画像はlog_waifuディレクトリに保存されます。
 ```
 $ bash start_instance_waifu.sh
 ```
