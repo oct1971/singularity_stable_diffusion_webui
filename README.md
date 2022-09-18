@@ -43,7 +43,7 @@ $ bash init.sh
 modelファイルは別途用意し、data_dir/models/ にリネームせずに配置してください。
 - [本家model](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original): sd-v1-4.ckpt
 - [waifu-diffuion model](https://huggingface.co/hakurei/waifu-diffusion): wd-v1-2-full-ema.ckpt
-　- Original PyTorch Model Download Link よりダウンロード
+    - Original PyTorch Model Download Link よりダウンロード
 - [trinart2 model](https://huggingface.co/naclbit/trinart_stable_diffusion_v2): trinart2_step60000.ckpt, trinart2_step95000.ckpt, trinart2_step115000.ckpt
 ## ESRGANのmodelの配置（オプション）
 ESRGANのmodelは data_dir/ESRGAN/ に配置してください。
