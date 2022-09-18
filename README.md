@@ -66,6 +66,9 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 - Output directory for img2img grids: /outputs/img2img-grids
 - Directory for saving images using the Save button: /log/images
 - Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+※当環境では、"Apply color correction to img2img results to match original colors." にチェックが入っているとSD upscaleでの出力時に黒ずんだ色になってしまいました。その場合はこちらのチェックを外してください。
+
 ## stable-diffusion-webuiの停止
 以下のコマンドで停止させてください。
 ```
