@@ -7,7 +7,9 @@ Linuxで使用する場合はNVIDIA driver, singularity3.9のインストール�
 
 https://sylabs.io/2022/03/wsl2-gpu/
 
-また、コマンドラインの実行用にMicrosoft StoreからWindows Termnalをインストールしておくことをお勧めします。以下のコマンドはWSL2のインストール時に同時にインストールされたUbuntu on WindowsやWindows Terminalで開いたubuntuのシェルで実行します。
+また、コマンドラインの実行用にMicrosoft StoreからWindows Termnalをインストールしておくことをお勧めします。
+
+以下のコマンドはWSL2のインストール時に同時にインストールされたUbuntu on WindowsやWindows Terminalで開いたubuntuのシェルで実行します。
 ## 本リポジトリのclone
 cloneする場所はどこでも構いません。
 ```
@@ -67,6 +69,8 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 - Output directory for img2img grids: /outputs/img2img-grids
 - Directory for saving images using the Save button: /log/images
 - Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+設定内容は data_dir/ui-config.json, data_dir/config.json に書き込まれますので、Batch countの上限変更等はこちらのファイルを修正してください。
 
 ※当環境では、"Apply color correction to img2img results to match original colors." にチェックが入っているとSD upscaleでの出力時に黒ずんだ色になってしまいました。その場合はこちらのチェックを外してください。
 
