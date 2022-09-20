@@ -16,5 +16,6 @@ mkdir models
 mkdir realesrgan-weight
 mkdir weights-codeformer
 mkdir weights-facelib
+mkdir weights
 echo '{}' > config.json
 echo '{}' > ui-config.json
