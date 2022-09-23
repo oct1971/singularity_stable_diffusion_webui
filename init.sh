@@ -17,5 +17,6 @@ mkdir realesrgan-weight
 mkdir weights-codeformer
 mkdir weights-facelib
 mkdir weights
+mkdir SwinIR
 echo '{}' > config.json
 echo '{}' > ui-config.json

@@ -9,6 +9,7 @@
 	-B data_dir/weights-facelib:/opt/stable-diffusion-webui/repositories/CodeFormer/weights/facelib/ \
 	-B data_dir/weights:/usr/local/lib/python3.10/dist-packages/weights/ \
 	-B data_dir/ESRGAN:/opt/stable-diffusion-webui/ESRGAN \
+	-B data_dir/SwinIR:/opt/stable-diffusion-webui/SwinIR \
 	-B data_dir/config.json:/opt/stable-diffusion-webui/config.json \
 	-B outputs_trinart2_60:/outputs \
 	-B log_trinart2_60:/log \
