@@ -42,8 +42,10 @@ singularityで実行されるコンテナ内は一部を除いて書き込み禁
 ※data_dir以外に ~/.cache 以下にダウンロードされるファイルもあります。
 
 ※lattent-diffusionがダウンロードするファイルは、コンテナを起動したディレクトリにrepositoriesディレクトリが作成され、その中にダウンロードされます。
+
+stable-diffusion-webui(AUTOMATIC1111版) にて画像出力先にmodelのhash値のサブディレクトリを使えるようになったため、modelごとの出力先の作成が不要になりました。init_model_integration.sh はmodel別の出力先を生成しません。
 ```
-$ bash init.sh
+$ bash init_model_integration.sh
 ```
 ## modelの配置
 modelファイルは別途用意し、data_dir/models/ にリネームせずに配置してください。
@@ -54,16 +56,13 @@ modelファイルは別途用意し、data_dir/models/ にリネームせずに�
 ## ESRGANのmodelの配置（オプション）
 ESRGANのmodelは data_dir/ESRGAN/ に配置してください。
 ## stable-diffusion-webuiの起動
-### 本家model (sd-v1-4.ckpt) での起動
-本家model (sd-v1-4.ckpt) で起動した場合、生成された画像はoutputs_sdディレクトリに、セーブした画像はlog_sdディレクトリに保存されます。
+生成された画像はoutputsディレクトリに、セーブした画像はlogディレクトリに保存されます。
+
+※この後のstable-diffusion-webuiの初期設定で 'Save images to a subdirectory', 'Save grids to subdirectory' にチェックを入れ、 'Directory name pattern' を '[model_hash]' とすると使用しているmodelごとにサブディレクトリが作成されます。
 ```
-$ bash start_instance_sd.sh
+$ bash start_instance.sh
 ```
-### waifu-diffusion model (wd-v1-2-full-ema.ckpt) での起動
-waifu-diffusion model (wd-v1-2-full-ema.ckpt) で起動した場合、生成された画像はoutputs_waifuディレクトリに、セーブした画像はlog_waifuディレクトリに保存されます。
-```
-$ bash start_instance_waifu.sh
-```
+
 ## stable-diffusion-webuiの初期設定
 Settingsタブで以下の設定を行い、Apply settingsをクリックして設定を保存してください。
 - Output directory for txt2img images: /outputs/txt2img-images
@@ -73,6 +72,9 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 - Output directory for img2img grids: /outputs/img2img-grids
 - Directory for saving images using the Save button: /log/images
 - Font for image grids that have text: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- Save images to a subdirectory: チェック
+- Save grids to subdirectory: チェック
+- Directory name pattern: [model_hash]
 
 設定内容は data_dir/ui-config.json, data_dir/config.json に書き込まれますので、Batch countの上限変更等はこちらのファイルを修正してください。
 
