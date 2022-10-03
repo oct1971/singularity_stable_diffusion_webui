@@ -60,6 +60,9 @@ ESRGANのmodelは data_dir/models/ESRGAN/ に配置してください。
 ## SwinIRのmodelの配置（オプション）
 SwinIRのmodelは data_dir/models/SwinIR/ に配置してください。
 
+## トレーニング済みembeddingの配置（オプション）
+textual inversionのトレーニング済みembeddingは data_dir/embeddings/ に配置してください。
+
 ## stable-diffusion-webuiの起動
 生成された画像はoutputsディレクトリに、セーブした画像はlogディレクトリに保存されます。
 
@@ -84,6 +87,9 @@ Settingsタブで以下の設定を行い、Apply settingsをクリックして�
 設定内容は data_dir/ui-config.json, data_dir/config.json に書き込まれますので、Batch countの上限変更等はこちらのファイルを修正してください。
 
 ※当環境では、"Apply color correction to img2img results to match original colors." にチェックが入っているとSD upscaleでの出力時に黒ずんだ色になってしまいました。その場合はこちらのチェックを外してください。
+
+## textual inversionで使用するディレクトリについて
+init_model_integration.sh の実行で、inputs と preprocessed_inputs ディレクトリを作成してあります。textual inversion の画面で、Source directory に inputs/, Destination directory に preprocessed_inputs/, Dataset directory に preprocessed_inputs/ を入力してください。
 
 ## stable-diffusion-webuiの停止
 以下のコマンドで停止させてください。
