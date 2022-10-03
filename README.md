@@ -55,10 +55,10 @@ modelファイルは別途用意し、data_dir/models/ にリネームせずに�
 - [trinart2 model](https://huggingface.co/naclbit/trinart_stable_diffusion_v2): trinart2_step60000.ckpt, trinart2_step95000.ckpt, trinart2_step115000.ckpt
 
 ## ESRGANのmodelの配置（オプション）
-ESRGANのmodelは data_dir/ESRGAN/ に配置してください。
+ESRGANのmodelは data_dir/models/ESRGAN/ に配置してください。
 
 ## SwinIRのmodelの配置（オプション）
-SwinIRのmodelは data_dir/SwinIR/ に配置してください。
+SwinIRのmodelは data_dir/models/SwinIR/ に配置してください。
 
 ## stable-diffusion-webuiの起動
 生成された画像はoutputsディレクトリに、セーブした画像はlogディレクトリに保存されます。
