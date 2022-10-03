@@ -48,7 +48,7 @@ stable-diffusion-webui(AUTOMATIC1111版) にて画像出力先にmodelのhash値
 $ bash init_model_integration.sh
 ```
 ## modelの配置
-modelファイルは別途用意し、data_dir/models/ にリネームせずに配置してください。
+modelファイルは別途用意し、data_dir/models/Stable-diffusion/ にリネームせずに配置してください。
 - [本家model](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original): sd-v1-4.ckpt
 - [waifu-diffuion model](https://huggingface.co/hakurei/waifu-diffusion): wd-v1-2-full-ema.ckpt
     - Original PyTorch Model Download Link よりダウンロード
