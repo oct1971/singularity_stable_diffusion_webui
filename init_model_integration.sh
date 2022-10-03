@@ -1,7 +1,8 @@
 #!/bin/bash
 mkdir data_dir
 mkdir outputs
-mkdir imputs
+mkdir inputs
+mkdir preprocessed_inputs
 mkdir log
 cd data_dir
 mkdir models

@@ -12,7 +12,6 @@
 	-B data_dir/embeddings:/opt/stable-diffusion-webui/embeddings \
 	-B outputs:/outputs \
 	-B log:/log \
-	-B inputs:/inputs \
 	sdwebui.sif \
 	sdwebui
 /usr/bin/singularity exec instance://sdwebui python3.10 /opt/stable-diffusion-webui/webui.py &
