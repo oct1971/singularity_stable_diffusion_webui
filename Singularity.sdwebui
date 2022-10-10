@@ -14,5 +14,18 @@ From: repositories.sif
     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
     cd /opt/stable-diffusion-webui
     mv /usr/local/src/repositories ./
+    cd /opt/stable-diffusion-webui/repositories/stable-diffusion
+    git pull
+    cd /opt/stable-diffusion-webui/repositories/taming-transformers
+    git pull
+    cd /opt/stable-diffusion-webui/repositories/k-diffusion
+    git pull
+    cd /opt/stable-diffusion-webui/repositories/CodeFormer
+    git pull
+    cd /opt/stable-diffusion-webui/repositories/BLIP
+    git pull
+    cd /opt/stable-diffusion-webui/repositories/latent-diffusion
+    git pull
+    cd /opt/stable-diffusion-webui
     pip install -r repositories/CodeFormer/requirements.txt --prefer-binary
     pip install -r /opt/stable-diffusion-webui/requirements.txt  --prefer-binary
