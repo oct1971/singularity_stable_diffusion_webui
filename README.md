@@ -21,7 +21,7 @@ singularity imageのbuildは管理者権限が必要なため、sudoを付けて
 
 ※cudnn導入のため、ベースイメージを nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 に変更しました。改めて base imageのbuild から実行してください（2022-10-12）。
 ### base imageのbuild
-ubuntu 20.04にpython3.10, cuda11.3をインストールしたイメージを作成します。
+ubuntu 20.04にpython3.10, cuda11.3, cudnn8 をインストールしたイメージを作成します。
 ```
 $ sudo bash build_base_image.sh
 ```
