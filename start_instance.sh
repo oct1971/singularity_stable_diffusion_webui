@@ -14,4 +14,4 @@
 	-B log:/log \
 	sdwebui.sif \
 	sdwebui
-/usr/bin/singularity exec instance://sdwebui python3.10 /opt/stable-diffusion-webui/webui.py &
+/usr/bin/singularity exec instance://sdwebui python3.10 /opt/stable-diffusion-webui/webui.py --deepdanbooru &
