@@ -14,5 +14,6 @@ mkdir weights-codeformer
 mkdir weights-facelib
 mkdir weights
 mkdir embeddings
+mkdir extensions
 echo '{}' > config.json
 echo '{}' > ui-config.json

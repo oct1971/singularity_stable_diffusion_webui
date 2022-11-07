@@ -10,6 +10,7 @@
 	-B data_dir/weights:/usr/local/lib/python3.10/dist-packages/weights/ \
 	-B data_dir/config.json:/opt/stable-diffusion-webui/config.json \
 	-B data_dir/embeddings:/opt/stable-diffusion-webui/embeddings \
+	-B data_dir/extensions:/opt/stable-diffusion-webui/extensions \
 	-B outputs:/outputs \
 	-B log:/log \
 	sdwebui.sif \
