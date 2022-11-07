@@ -19,7 +19,7 @@ From: repositories.sif
     git -C repositories/taming-transformers pull
     git -C repositories/taming-transformers checkout 24268930bf1dce879235a7fddd0b2355b84d7ea6
     git -C repositories/k-diffusion pull
-    git -C repositories/k-diffusion checkout f4e99857772fc3a126ba886aadf795a332774878
+    git -C repositories/k-diffusion checkout 60e5042ca0da89c14d1dd59d73883280f8fce991
     git -C repositories/CodeFormer pull
     git -C repositories/CodeFormer checkout c5b4593074ba6214284d6acd5f1719b6c5d739af
     git -C repositories/BLIP pull
