@@ -11,6 +11,7 @@
 	-B data_dir/config.json:/opt/stable-diffusion-webui/config.json \
 	-B data_dir/embeddings:/opt/stable-diffusion-webui/embeddings \
 	-B data_dir/extensions:/opt/stable-diffusion-webui/extensions \
+	-B data_dir/tmp:/opt/stable-diffusion-webui/tmp \
 	-B outputs:/outputs \
 	-B log:/log \
 	sdwebui.sif \
