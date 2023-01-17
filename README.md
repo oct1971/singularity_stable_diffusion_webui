@@ -1,7 +1,7 @@
 # singularity_stable_diffusion_webui
 [stable-diffusion-webui(AUTOMATIC1111版)](https://github.com/AUTOMATIC1111/stable-diffusion-webui) をインストールしたsingularity imageを作成・実行するためのsingularity定義ファイルとシェルスクリプトです。
 
-※install.pyを含むextensionはインストールできません。そのようなextensionについては、Singularity.webuiファイルにinstall.py中でインストールしているライブラリのインストールコマンドを追加してイメージを再生成し、extensionsディレクトリにextensionのリポジトリをgit cloneすることで使用は可能です。
+※install.pyを含むextensionはWebUIからインストールできません。そのようなextensionについては、Singularity.webuiファイルにinstall.py中でインストールしているライブラリのインストールコマンドを追加してイメージを再生成し、extensionsディレクトリにextensionのリポジトリをgit cloneすることで使用は可能です。
 ## WSL2, ubuntu20.04, singularity 3.9のインストール
 以下のページの手順に従ってWindows10/11にWSL2, ubuntu20.04, NVIDIA driver, libnvidia-container-tools, singularity3.9をインストールします。
 
