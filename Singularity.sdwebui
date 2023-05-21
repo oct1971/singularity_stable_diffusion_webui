@@ -32,3 +32,16 @@ From: repositories.sif
     pip install -r repositories/CodeFormer/requirements.txt --prefer-binary
     pip install -r /opt/stable-diffusion-webui/requirements_versions.txt  --prefer-binary
 
+    # DreamArtist-sd-webui-extension
+    pip install scikit_learn --prefer-binary
+
+    # sd-webui-riffusion
+    pip install torchaudio==0.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+    pip install scipy pedalboard
+
+    # stable-diffusion-webui-wd14-tagger
+    pip install mpmath sympy humanfriendly coloredlogs onnxruntime-gpu
+
+    # sd-webui-controlnet
+    pip install opencv-python svglib
+
